@@ -1,0 +1,62 @@
+/* styles.css */
+:root {
+    --custom-root-color: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
+    --custom-nav-btn-color: #fde047;
+
+
+
+
+  }
+  
+
+
+/* rotating button  */
+
+
+.filter-green{
+    filter: var(--custom-root-color);
+}
+
+/* nav-menu right to left  */
+.custom-nav-top-style > ul {
+    display: flex;
+    /* flex-direction: row-reverse; Start from right to left */
+    list-style: none;
+    padding: 0;
+  }
+  
+  .custom-nav-top-style > ul > li {
+    opacity: 0;
+    transform: translateX(100%); /* Initial position outside the screen */
+    animation: slideFromRight 0.5s ease-out forwards;
+  }
+  
+  @keyframes slideFromRight {
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+ 
+  /* styles.css */
+.icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color:#3182ce;
+    background-color: #e2e8f0;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .icon-container:hover {
+    background-color: #fde047; /* Change the background color on hover */
+  }
+  
+  .icon-container:hover svg {
+    filter: var(--custom-root-color); /* Change the icon color on hover */
+  }
+  
