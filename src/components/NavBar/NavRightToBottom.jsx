@@ -7,6 +7,7 @@ import {ImEye} from 'react-icons/im'
 
 const NavRightToBottom = () => {
   return (
+    <div className="left-to-bottom">
     <div class="grid gap-12 justify-end pt-2 ">
         <div className='icon-container'>
           <a href="#"  >
@@ -31,6 +32,7 @@ const NavRightToBottom = () => {
           </a>
           
         </div>
+    </div>
     </div>
   )
 }

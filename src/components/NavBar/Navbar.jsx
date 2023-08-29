@@ -25,7 +25,7 @@ const NavBar = () => {
 
   return (
     <nav>
-      <div className='flex pt-5 pr-5 justify-end'>
+      <div className='flex pt-5 pr-7 justify-end'>
         {/* rotation menu in 90 digree */}
       <div className="pr-5 pt-2">
         {showRightMenu &&(
