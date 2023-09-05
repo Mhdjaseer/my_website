@@ -22,14 +22,17 @@ const NavBar = () => {
   const showRightMenu=rotationAngle===90 ||rotationAngle===180;
   const showBottomMenu=rotationAngle===0 || rotationAngle===90;
   
+  
 
   return (
     <nav>
-      <div className='flex pt-5 pr-7 justify-end'>
+      
+      <div className='fixed'>
+        <div className="flex  pt-5 pr-7   justify-end">
         {/* rotation menu in 90 digree */}
-      <div className="pr-5 pt-2">
+      <div className="sm:pr-5  sm:pt-2">
         {showRightMenu &&(
-         <NavRightToLeft/>
+         <NavRightToLeft rotationAngle={rotationAngle}/>
         )}
       </div>
       
@@ -48,6 +51,7 @@ const NavBar = () => {
            <NavRightToBottom/>
         
       )}
+      </div>
       </div>
 
       

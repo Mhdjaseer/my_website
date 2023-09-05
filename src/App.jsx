@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
 import './App.css'
-import Index from './components/NavBar/Index'
+import NavBar from './components/NavBar'
 
 
 function App() {
@@ -9,7 +9,8 @@ function App() {
 
   return (
     <>
-      <Index/>
+      <NavBar/>
+      <div className="kjg"></div>
       
     </>
   )
