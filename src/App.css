@@ -38,16 +38,18 @@
     }
   }
 
- 
+ /*==nav icon top to bottom==*/
   .icon-container {
+    position:relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40px;
-    height: 40px;
+    width: fit-content;
+    height: fit-content;
+    padding:10px;
     border-radius: 50%;
-    color: #3182ce;
-    background-color: #e2e8f0;
+    color: #fff;
+    background-color: #6a6a6a;
     opacity: 0;
     transform: translateY(-20px);
     animation: slideFromTop 0.5s ease-out forwards;
@@ -61,8 +63,22 @@
   }
   
   .icon-container:hover {
-    background-color: #fde047;
+    background-color: #000000;
+    display: flex;
+    position: relative;
+    padding: auto;
+    /* border-radius: 0%; */
   }
+/* mouse hover content in the top nav icon  */
+  .hover-content{
+    display:none;
+  }
+  .icon-container:hover .hover-content {
+    display: inline-block;
+    
+  }
+
+
   
   .icon-container:hover svg {
     filter: var(--custom-root-color);
@@ -125,7 +141,9 @@
 
 
   @media screen and (min-width:640px) {
-    .show-icon{
-      display:none;
+      .show-icon{
+        display:none;
+      }
+
     }
-    }
+

@@ -54,25 +54,25 @@ export const navRightToBottom=[
         id:1,
         url:'/',
         text:'Hand Control',
-        // icon:
+        icon:<PiHandPalmDuotone size={25}/>
     },
     {
         id:2,
         url:'/',
         text:'Voice Control',
-        // icon:
+        icon:<BsFillMicFill size={25}/>
     },
     {
         id:3,
         url:'/',
         text:'Eye Control',
-        // icon:
+        icon:<ImEye size={25}/>
     },
     {
         id:4,
         url:'/',
         text:'Mouse Control',
-        // icon:
+        icon:<BsFillMouse2Fill size={25}/>
     }
 
 

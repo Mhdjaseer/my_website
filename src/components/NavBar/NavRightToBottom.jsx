@@ -1,38 +1,26 @@
 import React from 'react'
-import {PiHandPalmDuotone} from 'react-icons/pi'
-import {BsFillMicFill,BsFillMouse2Fill} from 'react-icons/bs'
-import {ImEye} from 'react-icons/im'
+import { navRightToBottom } from './Data'
 
 
 
 const NavRightToBottom = () => {
   return (
     <div className="left-to-bottom">
-    <div class="grid gap-12 justify-end pt-2 ">
-        <div className='icon-container'>
-          <a href="#"  >
-           <PiHandPalmDuotone size={25}/>
-           </a>
-        </div>
-        <div className='icon-container'>
-        <a href="#"  >
-            <BsFillMicFill size={25}/>
+      <div class="grid gap-12 justify-end pt-2 ">
+        {navRightToBottom.map((item)=>{
+          const {id,url,text,icon}=item
+          return(
+            <div className='icon-container' key={id}>
+              <div className="icon-container-next">
+            <a href={url}  className='icon-container-link' title={text}>
+              <span className="icon-stl">{icon}</span> 
+            {/* <span className="hover-content">{text}</span>  */}
             </a>
-        </div>
-        
-        <div className='icon-container'>
-          <a href="#">
-          <ImEye size={25}/>
-          </a>
-          
-        </div>
-        <div className='icon-container'>
-          <a href="#">
-          <BsFillMouse2Fill size={25}/>
-          </a>
-          
-        </div>
-    </div>
+            </div>
+          </div>
+          )
+        })}
+      </div>
     </div>
   )
 }
