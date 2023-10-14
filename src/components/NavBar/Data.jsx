@@ -8,9 +8,9 @@ import {GoProjectSymlink} from "react-icons/go";
 import {MdOutlineConnectWithoutContact} from 'react-icons/md';
 
 // second menu right to bottom menu bars
-import {PiHandPalmDuotone} from 'react-icons/pi'
-import {BsFillMicFill,BsFillMouse2Fill} from 'react-icons/bs'
-import {ImEye} from 'react-icons/im'
+
+import {AiFillInstagram,AiFillLinkedin,AiFillGithub,AiFillMail} from 'react-icons/ai'
+
 
 
 // Right::::menu icons,url and menu text's
@@ -53,26 +53,26 @@ export const navRightToBottom=[
     {
         id:1,
         url:'/',
-        text:'Hand Control',
-        icon:<PiHandPalmDuotone size={25}/>
+        text:'Instagram',
+        icon:<AiFillInstagram size={25}/>
     },
     {
         id:2,
         url:'/',
-        text:'Voice Control',
-        icon:<BsFillMicFill size={25}/>
+        text:'LinkedIn',
+        icon:<AiFillLinkedin size={25}/>
     },
     {
         id:3,
         url:'/',
-        text:'Eye Control',
-        icon:<ImEye size={25}/>
+        text:'GitHub',
+        icon:<AiFillGithub size={25}/>
     },
     {
         id:4,
         url:'/',
-        text:'Mouse Control',
-        icon:<BsFillMouse2Fill size={25}/>
+        text:'Mail',
+        icon:<AiFillMail size={25}/>
     }
 
 

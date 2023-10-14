@@ -39,7 +39,7 @@ const NavBar = () => {
 
 
           <div className="animation-btn ">
-        <button className='bg-[#fde047] rounded-full w-10 h-10 ' onClick={handleclick}>
+        <button className='bg-[#eac81a]   shadow-md hover:shadow-xl  rounded-full w-10 h-10 ' onClick={handleclick}>
           <img src={logo} style={imgStyle } className='filter-green' alt="" />
         </button>
         </div>
