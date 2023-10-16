@@ -222,11 +222,65 @@
 }
 
 .About{
-  background-color:#ffffff;
+  background-color:#3182ce;
   width: 100%;
-  height: 100vh;
+  height: 50vh;
+  /* position: relative; */
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
+ 
+}
+
+.about-div{
+  padding: 5px;
+  color: white;
+}
+.about-div >h1{
+  font-size: 30px;
+  color: #fdb447;
+}
+
+
+@media (max-width: 768px) {
+  .about-div> p{
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 768px) {
+  .about-div{
+    padding: 50px;
+   
+  }
+  .about-div >h1{
+    font-size: 70px;
+    
+  }
+}
+
+
+.about-p{
+  color: white;
+}
+.about-me{
+  color: yellow;
+}
+
+.skills{
+  background-color:#FFFF00;
+  width: 100%;
+  height: 100vh;
+  /* position: relative; */
+ 
+  overflow: hidden;
+ 
+}
+.skill-clr{
+  background-color: #fdb447;
+}
+.skill-clr:hover{
+  background-color: #3182ce;
+  color: yellow;
 }

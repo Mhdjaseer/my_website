@@ -1,5 +1,5 @@
 import React from 'react';
-import NavBar from './navBar'; // Assuming the correct import path
+import NavBar from './Navbar'; // Assuming the correct import path
 
 const Index = () => {
   return (

@@ -6,7 +6,7 @@ import NavRightToLeft from './NavRightToLeft';
 
 const NavBar = () => {
   const [isShown, setIsShown] = useState(false);
-  const [rotationAngle, setRotationAngle] = useState(0);
+  const [rotationAngle, setRotationAngle] = useState(180);
 
   const handleclick = () => {
     setIsShown(current => !current);
